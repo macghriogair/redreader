@@ -1,0 +1,22 @@
+{
+    "name": "macghriogair/redreader",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Patrick Mac Gregor",
+            "email": "macgregor.porta@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/console": "^3.1",
+        "kbsali/redmine-api": "^1.5"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Macghriogair\\RedReader\\": "src/"
+        }
+    }
+}

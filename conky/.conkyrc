@@ -1,0 +1,48 @@
+background no
+update_interval 2.0
+total_run_times 0
+own_window yes
+own_window_transparent yes
+own_window_type normal
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+double_buffer yes
+own_window_argb_visual yes
+own_window_argb_value 255
+
+minimum_size 700 300
+maximum_width 1000
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders yes
+default_color white
+default_outline_color white
+default_shade_color white
+alignment top_left
+gap_x 25
+gap_y 42
+net_avg_samples 2
+no_buffers yes
+out_to_console no
+out_to_stderr no
+extra_newline no
+uppercase no
+use_spacer none
+cpu_avg_samples 2
+override_utf8_locale yes
+
+use_xft yes
+xftfont Fira Code:size=10
+xftalpha 0.1
+
+color0 white
+color1 e2e2e2
+#color1 darkblue
+color2 gray
+color3 c96a1c
+
+TEXT
+# Redmine
+$color3${font Fira Code:bold:size=11}REDMINE ${hr 2}
+
+${font Fira Code:normal:size=10}${color1}${execi 60 php ~/dev/redreader/bin/console red:issues}
